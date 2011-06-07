@@ -1,0 +1,15 @@
+name = Geofield
+description = Defines a six column field for storing lat/lon data and bounding box data.
+core = 7.x
+dependencies[] = views
+files[] = geofield.module
+files[] = geofield.install
+files[] = "views/geofield.views.inc"
+files[] = "views/geofield_handler_field_point.inc"
+
+; Information added by fserver
+core = "7.x"
+datestamp = ""
+project = "geofield"
+project status url = "http://featureserver.phase2technology.com/fserver"
+version = "7.x-1.0-alpha1"

@@ -1,0 +1,12 @@
+core = "7.x"
+dependencies[] = "openpublic_projects"
+name = "Demo content for Openpublic Projects"
+package = "Features"
+php = "5.2.4"
+
+; Information added by fserver
+core = "7.x"
+datestamp = ""
+project = "openpublic_projects"
+project status url = "http://featureserver.phase2technology.com/fserver"
+version = "7.x-1.0-alpha3"

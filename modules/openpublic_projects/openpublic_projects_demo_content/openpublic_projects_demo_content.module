@@ -1,0 +1,48 @@
+<?php
+
+/**
+ * Implements hook_enable().
+ */
+function openpublic_projects_demo_content_enable() {
+  //openpublic_projects_demo_content_import('openpublic_projects_locations', 'us_cities.csv');
+  openpublic_projects_demo_content_import('openpublic_projects', 'projects.csv');
+}
+
+function openpublic_projects_demo_content_disable() {
+  $importer_id = 'openpublic_projects';
+  feeds_source($importer_id)->startClear();
+ // $importer_id = 'openpublic_projects_locations';
+ // feeds_source($importer_id)->startClear();
+}
+/**
+ * Imports a CSV file.
+ */
+function openpublic_projects_demo_content_import($importer, $file) {
+  $filepath = "public://openpublic_projects/";
+  file_prepare_directory($filepath, FILE_MODIFY_PERMISSIONS | FILE_CREATE_DIRECTORY);
+  $filepath .= $file;
+
+  // Copy locations csv to file directory, avoid using shell_exec() for
+  // compatibility reasons. For security reasons, feeds only consumes files
+  // from the public directory.
+  if (!file_exists($filepath)) {
+    $src = file_get_contents(drupal_get_path('module', 'openpublic_projects_demo_content') . "/{$file}");
+    file_put_contents($filepath, $src);
+  }
+  try {
+    // Ensure importer exists.
+    feeds_importer($importer)->existing();
+    $source = feeds_source($importer);
+    $source->addConfig(
+      array(
+        'FeedsFileFetcher' => array(
+          'source' => $filepath
+        ),
+      )
+    );
+    while (FEEDS_BATCH_COMPLETE != $source->import());
+  }
+  catch (Exception $e) {
+    drupal_set_message(t('Error importing demo content. ' . $e->getMessage()), 'error');
+  }
+}

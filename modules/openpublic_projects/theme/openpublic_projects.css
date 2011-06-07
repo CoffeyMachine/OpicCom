@@ -1,0 +1,162 @@
+#outer-wrapper #wrap-inner {
+  background: repeat-y scroll 0 0 #FFFFFF;
+  }
+.page-projects #main-wrapper #main {
+  width: 955px;
+  }
+ 
+/* AJAX pager */
+ul.pager .ajax-progress.ajax-progress-throbber,
+ul.pager .ajax-progress.ajax-progress-throbber .throbber {
+  float: none;
+  display: inline-table;
+  margin: 0 2px;
+}
+a.active.progress-disabled {
+  display: none;
+}
+
+
+/* General OpenLayers styles */
+
+.openlayers-container-preset-project_map,
+.openlayers-views-map {
+  background: #001B2C url(../img/bg-page.jpg) repeat-x;
+}
+
+.region-sidebar-second .openlayers-views-map {
+  margin: 0 15px;
+  width: 260px;
+}
+
+.openlayers-popupbox {
+  width: 300px;
+  position: absolute;
+  font-size: 15px;
+  top: 0px;
+  right: 0px;
+  padding: 0;
+  background-image: url(bg-black75.png);
+  z-index: 1000;
+  -moz-border-radius-bottomleft: 10px;
+}
+  .openlayers-popupbox.popup {
+    height: 250px;
+  }
+  .openlayers-popupbox .popup-close {
+    float: right;
+    padding: 5px 10px;
+    margin: 10px 10px 0 0;
+    -moz-border-radius: 5px;
+    background-color: #000;
+    font-weight: bold;
+  }
+  .openlayers-popupbox > h2 {
+    font-size: 15px;
+    padding: 10px;
+    margin: 0;
+    float: left;
+  }
+  .openlayers-popupbox.popup > h2 {
+    float: none;
+  }
+  .openlayers-popupbox,
+  .openlayers-popupbox h2 {
+    color: #bbb;
+  }
+  .openlayers-popupbox .popup-count {
+    padding: 10px;
+  }
+  .openlayers-popupbox a,
+  .openlayers-popupbox a:link,
+  .openlayers-popupbox a:visited,
+  .openlayers-popupbox a {
+    color: #fff;
+    text-decoration:none;
+  }
+    .openlayers-popupbox h2.point-title {
+      font-family: Arial,sans-serif;
+      font-size: 20px;
+      font-style: normal;
+    }
+  .openlayers-popupbox .item-list ul li {
+    font-size: 15px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: #bbb;
+  }
+  .openlayers-popupbox .popup-content {
+    padding: 0 10px;
+    line-height: 1.5em;
+    height: 150px;
+  }
+  .openlayers-popupbox .popup-pager {
+    position: absolute;
+    bottom: 0;
+    line-height: 15px; /* Put all elements on the same baseline */
+    padding: 10px;
+  }
+    .openlayers-popupbox .popup-pager ul {
+      margin: 0;
+      float: left;
+    }
+      .openlayers-popupbox .popup-pager ul li {
+        float: left;
+        list-style-type: none;
+        margin: 0 10px 0 0;
+        font-size: 15px;
+        line-height: 15px; /* Put all elements on the same baseline */
+      }
+
+/* Project map */
+
+.view-project-listing.view-display-id-page_1 .views-row {
+  width: 175px;
+  height: 120px;
+  margin: 0 5px 10px 5px;
+  float: left;
+  overflow:hidden;
+  position:relative;
+  background-color: #587A90;
+}
+.view-project-listing.view-display-id-page_1 .views-field-title {
+  background-color: #002339;
+  color:#fff;
+  padding:0 2px;
+  position:absolute;
+  width: 171px;
+  top: auto;
+  bottom: 0;
+  opacity: 0.8;
+}
+
+/* Project node */
+
+/* This should be probably a global style or no style at all */
+.node .field-name-field-project-image {
+  border: 1px solid #ddd;
+  margin: 20px 0;
+  padding: 5px;
+}
+  .field-name-field-project-attribution {
+    font-family: Georgia,serif;
+    color: #666;
+    font-style: italic;
+    margin: -10px 0 20px 0;
+  }
+  .field.field-name-field-project-attribution .field-label {
+    font-weight: normal;
+  }
+
+/* Sidebar blocks on project node view */
+#right-rail #block-views-project-listing-block-2 {
+  background-image: none;
+  }
+#right-rail #block-views-project-listing-block-2 .view-header {
+  font-style: italic;
+  margin: 0 15px;
+}
+#right-rail #block-views-project-listing-block-2 .item-list ul li {
+  list-style-type: none;
+}
