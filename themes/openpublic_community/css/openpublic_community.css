@@ -1,0 +1,74 @@
+body {
+	background:#fff;
+}
+a:hover, a:active, li a.active {
+  outline: none;
+  color: #8E1C1C;
+}
+#page-wrapper,
+#outer-wrapper,
+#footer,
+#footer-moulding {
+    background: none;
+}
+#footer {
+	margin-top:20px;
+}
+#footer li a {
+    color: #660000;
+		text-shadow:none;
+}
+#footer-inner {
+    background: none;
+}
+#footer-nav li li a,
+#footer-nav li li a:hover, #footer-nav li li a:focus {
+    color: #666666;
+}
+#header .title {
+    background:none;
+}
+#footer-logo-subscribe {
+	background:#fff;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.4);
+}
+#footer-inner {
+    width: 967px;
+}
+#footer-logo-subscribe-bottom {
+	background:none;
+}
+#header .site-name a,
+#footer .site-name a {
+	display:none;
+}
+#header .logo {
+    margin: 14px 0 0;
+}
+#footer-utility li {
+    float: left;
+    margin: 0 10px 10px 0;
+    text-transform:none;
+}
+#footer-utility li a {
+	font-size:10px;
+	color:#555;
+}
+#wrap-inner, .front #wrap-inner {
+    background: #FAFAFA;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.4);
+    width: 967px;
+}
+.front #block-ideation-ideation-submit-idea {
+	background:none;
+	border:none;
+}
+.book-block-menu ul.menu li {
+	margin:0 0 0 1.5em;
+}
+html[xmlns] .clearfix {
+    display: block;
+}
+.body-text {
+    padding: 15px 21px;
+}
