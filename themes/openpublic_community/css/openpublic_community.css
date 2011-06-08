@@ -32,9 +32,6 @@ a:hover, a:active, li a.active {
 	background:#fff;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.4);
 }
-#footer-inner {
-    width: 967px;
-}
 #footer-logo-subscribe-bottom {
 	background:none;
 }
@@ -57,7 +54,6 @@ a:hover, a:active, li a.active {
 #wrap-inner, .front #wrap-inner {
     background: #FAFAFA;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.4);
-    width: 967px;
 }
 .front #block-ideation-ideation-submit-idea {
 	background:none;
@@ -69,6 +65,6 @@ a:hover, a:active, li a.active {
 html[xmlns] .clearfix {
     display: block;
 }
-.body-text {
-    padding: 15px 21px;
+#right-rail {
+    margin: 4px 0 0 22px;
 }

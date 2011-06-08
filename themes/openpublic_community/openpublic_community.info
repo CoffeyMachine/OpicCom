@@ -1,7 +1,7 @@
 core = 7.x
 description = Custom Theme for the OpenPublic Community Site
 name = OpenPublic Community Site Theme
-base theme = openpublic_crest
+base theme = openpublic_theme
 
 
 ; CSS styles for default HTML elements.
