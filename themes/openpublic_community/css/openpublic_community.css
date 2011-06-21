@@ -119,13 +119,22 @@ span#documentation-icon {
 /*
  * Ideas we're watching homepage block
  */
-.view-display-id-block_ideas_watch .views-row {
+.view-display-id-block_ideas_watch .views-row,
+#right-rail .view-ideas-watch .views-row {
 	background:url("/sites/all/modules/ideation/images/icon-idea.gif") no-repeat scroll left top transparent;
-	padding-left:50px;
+	padding:0 0 0 50px;
 	margin:15px;
 }
+#right-rail .view-ideas-watch a.username,
+#right-rail #block-views-4fc346cc5920b0b8027cf39c18f31cb1 a.username,
+#right-rail .view-ideas-watch .views-field-created,
+#right-rail #block-views-4fc346cc5920b0b8027cf39c18f31cb1 .views-field-created {
+	float:none;
+	font-size:11px;
+	margin-left:0;
+}
 .view-display-id-block_ideas_watch .views-field-title a {
-	color: #00436F;
+	color: #660000;
   font-family: Constantia,Georgia,Times New Roman,serif;
 	font-size: 13px;
   font-weight: bolder;
@@ -144,9 +153,25 @@ span#documentation-icon {
 }
 
 /* Place submit an idea button below callout box */
-#block-ideation-ideation-box .content a {
+#block-ideation-ideation-box .content a,
+#block-ideation-ideation-box .content a:hover {
 	left:auto;
 	top:auto;
 	width:245px;
-	margin:30px 0;	
+	margin:30px 0;
+	background: #ab0634; /* Old browsers */
+  background: -moz-linear-gradient(top, #ab0634 0%, #7b0022 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ab0634), color-stop(100%,#7b0022)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ab0634 0%,#7b0022 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #ab0634 0%,#7b0022 100%); /* Opera11.10+ */
+  background: -ms-linear-gradient(top, #ab0634 0%,#7b0022 100%); /* IE10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ab0634', endColorstr='#7b0022',GradientType=0 ); /* IE6-9 */
+  background: linear-gradient(top, #ab0634 0%,#7b0022 100%); /* W3C */
+	border:none;	
+}
+
+
+
+.section-col .section-content .entry h4 a, .section-col .section-content .entry h4 a:link, .section-col .section-content .entry h4 a:visited {
+	color:#660000;
 }
