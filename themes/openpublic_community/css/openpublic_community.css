@@ -68,3 +68,38 @@ html[xmlns] .clearfix {
 #right-rail {
     margin: 4px 0 0 22px;
 }
+
+/*
+ * Ideas we're watching homepage block
+ */
+.view-display-id-block_ideas_watch .views-row {
+	background:url("/sites/all/modules/ideation/images/icon-idea.gif") no-repeat scroll left top transparent;
+	padding-left:50px;
+	margin:15px;
+}
+.view-display-id-block_ideas_watch .views-field-title a {
+	color: #00436F;
+  font-family: Constantia,Georgia,Times New Roman,serif;
+	font-size: 13px;
+  font-weight: bolder;
+  letter-spacing: 0.03em;
+  margin: 0 0 5px;
+	display:block;
+}
+.view-display-id-block_ideas_watch .views-field-name,
+.view-display-id-block_ideas_watch .views-field-created {
+	color:#999;
+	font-size:11px;
+}
+.view-display-id-block_ideas_watch .views-field-name a {
+	font-weight:normal;
+	color:#999;
+}
+
+/* Place sunmit an idea button below callout box */
+#block-ideation-ideation-box .content a {
+	left:auto;
+	top:auto;
+	width:245px;
+	margin:30px 0;	
+}
