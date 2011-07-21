@@ -202,3 +202,17 @@ div.node-idea-site .submitted {
 }
 .fivestar-static-form-item .form-item > .description { display: none; }
 
+/*
+ * Footer
+ */
+#footer-nav {
+    float: none;
+    margin: 0 auto;
+    width: 750px;
+}
+#p2-footer-logo {
+	margin-bottom:15px;
+}
+.region-footer {
+	border-top:1px solid #ccc;
+}
