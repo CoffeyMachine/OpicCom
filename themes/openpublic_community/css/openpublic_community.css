@@ -119,6 +119,12 @@ span#documentation-icon {
 /*
  * Ideas we're watching homepage block
  */
+#right-rail .view-ideas-watch {
+    padding: 0;
+}
+#right-rail .view-ideas-watch .views-row {
+	border-bottom:none;
+}
 .view-display-id-block_ideas_watch .views-row,
 #right-rail .view-ideas-watch .views-row {
 	background:url("/sites/all/modules/ideation/images/icon-idea.gif") no-repeat scroll left top transparent;
@@ -153,12 +159,17 @@ span#documentation-icon {
 }
 
 /* Place submit an idea button below callout box */
+#block-ideation-ideation-box {
+  background-position:top;
+	padding: 20px 20px 30px;
+	margin:0;
+}
 #block-ideation-ideation-box .content a,
 #block-ideation-ideation-box .content a:hover {
 	left:auto;
 	top:auto;
-	width:245px;
-	margin:30px 0;
+	width:auto;
+	margin:35px 0 0 0;
 	background: #ab0634; /* Old browsers */
   background: -moz-linear-gradient(top, #ab0634 0%, #7b0022 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ab0634), color-stop(100%,#7b0022)); /* Chrome,Safari4+ */
@@ -167,11 +178,22 @@ span#documentation-icon {
   background: -ms-linear-gradient(top, #ab0634 0%,#7b0022 100%); /* IE10+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ab0634', endColorstr='#7b0022',GradientType=0 ); /* IE6-9 */
   background: linear-gradient(top, #ab0634 0%,#7b0022 100%); /* W3C */
-	border:none;	
+	border:none;
+	position:static;
+	float:none;
 }
-
-
 
 .section-col .section-content .entry h4 a, .section-col .section-content .entry h4 a:link, .section-col .section-content .entry h4 a:visited {
 	color:#660000;
 }
+
+/*
+ * Ideas page
+ */
+div.node-idea-site h2 {
+	float:none;
+}
+div.node-idea-site .submitted {
+	margin:0 0 15px;
+}
+.fivestar-static-form-item .form-item > .description { display: none; }
