@@ -5,6 +5,10 @@ a:hover, a:active, li a.active {
   outline: none;
   color: #8E1C1C;
 }
+.node-site-page .content h2 {
+    color: #AB0634;
+    font-size: 1.5em;
+}
 #page-wrapper,
 #outer-wrapper,
 #footer,
@@ -197,3 +201,4 @@ div.node-idea-site .submitted {
 	margin:0 0 15px;
 }
 .fivestar-static-form-item .form-item > .description { display: none; }
+
